@@ -134,7 +134,7 @@ var builder = {
 			}
 
 			try {
-				that.css = tree.toCSS({ compress: true })
+				that.css = tree.toCSS({ compress: true, yuicompress:true })
 			} catch(err) {
 				console.log('Parse error');
 				console.log(err);
